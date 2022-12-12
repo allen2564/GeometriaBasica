@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    background: #be50d9;
+    background: -webkit-linear-gradient(0deg, #be50d9 0%, #790e79 50%, rgba(47, 29, 53, 0.99) 100%);
+    background: linear-gradient(0deg, #be50d9 0%, #790e79 50%, rgba(47, 29, 53, 0.99) 100%);
+}
+
+/* ENCABEZADO
+=============== */
+
+.header {
+    background: radial-gradient(circle, transparent 20%, #8a2be2 20%, #8a2be2 80%, transparent 80%, transparent) 0% 0% / 58px 58px, radial-gradient(circle, transparent 20%, #8a2be2 20%, #8a2be2 80%, transparent 80%, transparent) 29px 29px / 58px 58px, linear-gradient(#7423c0 2px, transparent 2px) 0px -1px / 29px 29px, linear-gradient(90deg, #7423c0 2px, #8a2be2 2px) -1px 0px / 29px 29px #8a2be2;
+    background-color: #8a2be2;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+.header-title {
+    color: #ffe;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.header-description {
+    color: #ffe;
+    padding: 10px;
+}
+
+/* RESPUESTA
+=============== */
+
+.answer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.answer p {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(239, 243, 242);
+    border-bottom: 6px dotted rebeccapurple;
+    padding-bottom: 10px;
+}
+
+/* CONTENEDOR DE FIGURAS
+=============== */
+
+.figures {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    max-width: 1000px;
+
+
+}
+
+
+/* CASILLAS O CAJAS
+=============== */
+.box {
+    width: 30%;
+    height: 600px;
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+    background-color: #e0c7f786;
+    margin: 15px;
+    float: right;
+}
+
+
+/* ENCABEZADO Y MAIN DE LA CAJA
+=============== */
+
+.box-header {
+    background: radial-gradient(circle, transparent 20%, #8a2be2 20%, #8a2be2 80%, transparent 80%, transparent) 0% 0% / 58px 58px, radial-gradient(circle, transparent 20%, #8a2be2 20%, #8a2be2 80%, transparent 80%, transparent) 29px 29px / 58px 58px, linear-gradient(#7423c0 2px, transparent 2px) 0px -1px / 29px 29px, linear-gradient(90deg, #7423c0 2px, #8a2be2 2px) -1px 0px / 29px 29px #8a2be2;
+    background-color: #8a2be2;
+    text-align: center;
+    padding: 15px 0;
+    color: #ffe;
+}
+
+.box-main {
+    text-align: center;
+    padding: 10px;
+}
+
+.box-main__text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box-main__input {
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: blueviolet;
+    border: solid blueviolet;
+    border-radius: 5px;
+}
+
+.box-main__btn {
+    background-color: blueviolet;
+    color: #ffe;
+    width: 120px;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+a {
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+.box-main__btn:hover {
+    background-color: #691daf;
+    cursor: pointer;
+}
+
+.box-main__btn:active {
+    background-color: #350a5e;
+}
+
+/*WEB  RESPONSIVO*/
+
+@media (max-width: 1021px) {
+    .figures {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .box {
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 645px) {
+
+    .box {
+        width: 90%;
+        margin: 25px;
+        height: auto;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .box {
+        width: 90%;
+        margin: 20px;
+        height: auto;
+    }
+
+    .header-title {
+        font-size: 30px;
+
+    }
+
+    .answer p {
+        font-size: 20px;
+    }
+
+    .box-main__input {
+        width: auto;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Figuras geometricas</title>
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <h1 class="header-title" id="inicio">Figuras geométricas</h1>
+        <p class="header-description">
+            Calcular diferentes medidas de figuras Geométricas como área y perimetro
+        </p>
+    </header>
+    <!-- RESPUESTA -->
+    <div class="answer">
+        <p id="resultado"> +++ RESULTADO +++</p>
+    </div>
+
+    <!-- SECCION CAJAS -->
+    <section class="figures">
+
+        <div class="box">
+            <div class="box-header">
+                <h2>Circulo</h2>
+            </div>
+
+            <div class="box-main">
+                <p class="box-main__text">¿Cuanto mide el radio de tu Circulo?</p>
+                <input class="box-main__input" type="number" name="side" id="inputSideCircle"
+                    placeholder="Ingrese el radio" onfocus="eliminar(id)">
+                <button class="box-main__btn" type="button" onclick="calcularDiametroCirculo()"><a href="#inicio">
+                        Diámetro</a></button>
+                <button class="box-main__btn" type="button" onclick="calcularPerimetroCirculo()"><a href="#inicio">
+                        Perímetro</a></button>
+                <button class="box-main__btn" type="button" onclick="calcularAreaCirculo()"><a href="#inicio">
+                        Área</a></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header">
+                <h2>Triangulo</h2>
+            </div>
+
+
+            <div class="box-main">
+                <p class="box-main__text">¿Cuanto mide cada lado de tú Triangulo?</p>
+                <input class="box-main__input" type="number" name="side" id="sideTriangle1" placeholder="Lado numero 1"
+                    onfocus="eliminar(id)">
+                <input class="box-main__input" type="number" name="side" id="sideTriangle2" placeholder="Lado numero 2"
+                    onfocus="eliminar(id)">
+                <input class="box-main__input" type="number" name="side" id="sideTriangle3" placeholder="Lado numero 3"
+                    onfocus="eliminar(id)">
+                <button class="box-main__btn" type="button" onclick="calcularPerimetroTriangulo()"><a href="#inicio">
+                        Perímetro</a></button>
+                <p class="box-main__text">¿Cuanto mide la base y la altura de tú Triangulo?</p>
+                <input class="box-main__input" type="number" name="side" id="sideTriangle4"
+                    placeholder="Ingrese la base"  onfocus="eliminar(id)">
+                <input class="box-main__input" type="number" name="side" id="sideTriangle5"
+                    placeholder="Ingrese la altura"  onfocus="eliminar(id)">
+                <button class="box-main__btn" type="button" onclick="calcularAreaTriangulo()"><a href="#inicio">
+                        Área</a></button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">
+                <h2>Cuadrado</h2>
+            </div>
+
+
+            <div class="box-main">
+                <p class="box-main__text">¿Cuanto mide cada lado de tú Cuadrado?</p>
+                <input class="box-main__input" type="number" name="side" id="inputSide" placeholder="Ingrese lados"
+                    onfocus="eliminar(id)">
+                <button class="box-main__btn" type="button" onclick="calcularPerimetroCuadrado()"><a href="#inicio">
+                        Perímetro</a></button>
+                <button class="box-main__btn" type="button" onclick="calcularAreaCuadrado()"><a href="#inicio">
+                        Área</a></button>
+            </div>
+        </div>
+    </section>
+    <script src="js/geometric.js "></script>
+</body>
+
+</html>
