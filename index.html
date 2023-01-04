@@ -35,11 +35,11 @@
                 <p class="box-main__text">¿Cuanto mide el radio de tu Circulo?</p>
                 <input class="box-main__input" type="number" name="side" id="inputSideCircle"
                     placeholder="Ingrese el radio" onfocus="eliminar(id)">
-                <button class="box-main__btn" type="button" onclick="calcularDiametroCirculo()"><a href="#inicio">
+                <button class="box-main__btn" type="button" id="btnDiameCircle"><a href="#inicio">
                         Diámetro</a></button>
-                <button class="box-main__btn" type="button" onclick="calcularPerimetroCirculo()"><a href="#inicio">
+                <button class="box-main__btn" type="button" id="btnPerimCircle"><a href="#inicio">
                         Perímetro</a></button>
-                <button class="box-main__btn" type="button" onclick="calcularAreaCirculo()"><a href="#inicio">
+                <button class="box-main__btn" type="button" id="btnAreaCircle"<a href="#inicio">
                         Área</a></button>
             </div>
         </div>
@@ -58,14 +58,14 @@
                     onfocus="eliminar(id)">
                 <input class="box-main__input" type="number" name="side" id="sideTriangle3" placeholder="Lado numero 3"
                     onfocus="eliminar(id)">
-                <button class="box-main__btn" type="button" onclick="calcularPerimetroTriangulo()"><a href="#inicio">
+                <button class="box-main__btn" type="button" id="btnPerimTriangle"><a href="#inicio">
                         Perímetro</a></button>
                 <p class="box-main__text">¿Cuanto mide la base y la altura de tú Triangulo?</p>
                 <input class="box-main__input" type="number" name="side" id="sideTriangle4"
                     placeholder="Ingrese la base"  onfocus="eliminar(id)">
                 <input class="box-main__input" type="number" name="side" id="sideTriangle5"
                     placeholder="Ingrese la altura"  onfocus="eliminar(id)">
-                <button class="box-main__btn" type="button" onclick="calcularAreaTriangulo()"><a href="#inicio">
+                <button class="box-main__btn" type="button" id="btnAreaTriangle"><a href="#inicio">
                         Área</a></button>
             </div>
         </div>
@@ -79,14 +79,14 @@
                 <p class="box-main__text">¿Cuanto mide cada lado de tú Cuadrado?</p>
                 <input class="box-main__input" type="number" name="side" id="inputSide" placeholder="Ingrese lados"
                     onfocus="eliminar(id)">
-                <button class="box-main__btn" type="button" onclick="calcularPerimetroCuadrado()"><a href="#inicio">
+                <button class="box-main__btn" type="button" id="btnPerimSquare"><a href="#inicio">
                         Perímetro</a></button>
-                <button class="box-main__btn" type="button" onclick="calcularAreaCuadrado()"><a href="#inicio">
+                <button class="box-main__btn" type="button" id="btnAreaSquare"><a href="#inicio">
                         Área</a></button>
             </div>
         </div>
     </section>
-    <script src="js/geometric.js "></script>
+    <script src="js/geometric-min.js "></script>
 </body>
 
 </html>
